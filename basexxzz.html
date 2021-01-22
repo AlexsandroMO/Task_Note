@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+
+    <title>{% block title %} {% endblock %}</title>
+    <meta name="referrer" content="origin">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+
+   
+    <!-- <link rel="stylesheet" id="theme" type="text/css" href="https://d12y7sg0iam4lc.cloudfront.net/b1159/s/css/dark.css"> -->
+
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+
+  </head>
+
+<body data-init="work-header" class="workspace" data-user-id="ER_lZjQJRIVZqM5JaT8zLuPb" data-build="1159">
+
+<div id="wrap">
+  <header class="header-wrap navbar navbar-default">
+    <div id="header">
+        {% block main %} {% endblock %}
+    </div>
+
+</div>
+
+</body>
+</html>
